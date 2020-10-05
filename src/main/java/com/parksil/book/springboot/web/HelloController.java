@@ -1,6 +1,6 @@
 package com.parksil.book.springboot.web;
 
-import com.parksil.book.springboot.web.dto.HelloResponseDTO;
+import com.parksil.book.springboot.web.dto.HelloResponseDto;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,8 +14,8 @@ public class HelloController {
     }
 
     @GetMapping("/hello/dto")
-    public HelloResponseDTO helloDto(@RequestParam("name") String name,
+    public HelloResponseDto helloDto(@RequestParam("name") String name,
                                      @RequestParam("amount") int amount) {
-        return new HelloResponseDTO(name, amount);
+        return new HelloResponseDto(name, amount);
     }
 }
