@@ -2,7 +2,7 @@ package com.parksil.book.springboot.web;
 
 import com.parksil.book.springboot.config.auth.LoginUser;
 import com.parksil.book.springboot.config.auth.dto.SessionUser;
-import com.parksil.book.springboot.service.posts.PostsService;
+import com.parksil.book.springboot.service.PostsService;
 import com.parksil.book.springboot.web.dto.PostsResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;

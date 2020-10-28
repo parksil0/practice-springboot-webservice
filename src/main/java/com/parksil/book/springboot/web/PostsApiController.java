@@ -1,6 +1,6 @@
 package com.parksil.book.springboot.web;
 
-import com.parksil.book.springboot.service.posts.PostsService;
+import com.parksil.book.springboot.service.PostsService;
 import com.parksil.book.springboot.web.dto.PostsResponseDto;
 import com.parksil.book.springboot.web.dto.PostsSaveRequestDto;
 import com.parksil.book.springboot.web.dto.PostsUpdateRequestDto;

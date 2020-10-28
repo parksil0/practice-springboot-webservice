@@ -42,11 +42,6 @@ public class PostsApiControllerTest {
     @Autowired
     private PostsRepository postsRepository;
 
-    @After
-    public void tearDown() {
-        postsRepository.deleteAll();
-    }
-
     @Autowired
     private WebApplicationContext context;
 
@@ -58,6 +53,11 @@ public class PostsApiControllerTest {
                 .webAppContextSetup(context)
                 .apply(springSecurity())
                 .build();
+    }
+
+    @After
+    public void tearDown() {
+        postsRepository.deleteAll();
     }
 
     @Test
